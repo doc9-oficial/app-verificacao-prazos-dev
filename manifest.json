@@ -28,6 +28,7 @@
     },
     "functions": {
         "verificarPrazos": {
+            "name": "Verificar Prazos - Flow.Doc9",
             "script": "dist/verificarPrazos.js",
             "description": "Identifica prazos em documentos",
             "category": "judicial",
@@ -51,6 +52,7 @@
             ]
         },
         "criarAlerta": {
+            "name": "Criar Alerta - Flow.Doc9",
             "script": "dist/criarAlerta.js",
             "description": "Cria alerta para prazo identificado",
             "category": "judicial",
