@@ -9,7 +9,8 @@
             "footer": "As credenciais são armazenadas com segurança.",
             "link": ""
         },
-        "params": [            {
+        "params": [
+            {
                 "name": "whomToken",
                 "type": "string",
                 "inputType": "text",
@@ -22,7 +23,7 @@
                 "inputType": "text",
                 "required": true,
                 "label": "ID da Extensão do Whom"
-            }        
+            }
         ]
     },
     "functions": {
@@ -33,21 +34,11 @@
             "values": {
                 "parametro": "valor"
             },
-            "params": [
-                {
-                    "name": "parametro",
-                    "type": "string",
-                    "inputType": "text",
-                    "required": true,
-                    "label": "Parâmetro principal"
-                }
-            ]        },
-        "criarAlerta": {
-            "script": "dist/criarAlerta.js",
-            "description": "Cria alerta para prazo identificado",
-            "category": "judicial",
-            "values": {
-                "parametro": "valor"
+            "help": {
+                "title": "Como usar a função verificarPrazos",
+                "body": "Use esta função para identificar prazos legais em documentos fornecidos. Forneça o parâmetro necessário para especificar o documento a ser analisado.",
+                "footer": "",
+                "link": ""
             },
             "params": [
                 {
@@ -57,7 +48,32 @@
                     "required": true,
                     "label": "Parâmetro principal"
                 }
-            ]        }    },
+            ]
+        },
+        "criarAlerta": {
+            "script": "dist/criarAlerta.js",
+            "description": "Cria alerta para prazo identificado",
+            "category": "judicial",
+            "values": {
+                "parametro": "valor"
+            },
+            "help": {
+                "title": "Como usar a função criarAlerta",
+                "body": "Use esta função para criar um alerta para um prazo legal identificado. Forneça o parâmetro necessário para especificar os detalhes do alerta.",
+                "footer": "",
+                "link": ""
+            },
+            "params": [
+                {
+                    "name": "parametro",
+                    "type": "string",
+                    "inputType": "text",
+                    "required": true,
+                    "label": "Parâmetro principal"
+                }
+            ]
+        }
+    },
     "config": {
         "timeout": 60000,
         "max_retries": 3,
